@@ -143,7 +143,7 @@ panel_frame_switcher_init (PanelFrameSwitcher *switcher)
 {
   switcher->buttons = g_hash_table_new_full (g_direct_hash, g_direct_equal, g_object_unref, NULL);
 
-  gtk_widget_set_valign (GTK_WIDGET (switcher), GTK_ALIGN_CENTER);
+  gtk_widget_set_valign (GTK_WIDGET (switcher), GTK_ALIGN_START);
 
   gtk_widget_add_css_class (GTK_WIDGET (switcher), "linked");
 
