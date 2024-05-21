@@ -147,6 +147,8 @@ panel_frame_switcher_init (PanelFrameSwitcher *switcher)
 
   gtk_widget_add_css_class (GTK_WIDGET (switcher), "linked");
 
+  gtk_widget_set_size_request(GTK_WIDGET (switcher), 340, -1);
+
   _panel_dock_update_orientation (GTK_WIDGET (switcher), GTK_ORIENTATION_HORIZONTAL);
 }
 
