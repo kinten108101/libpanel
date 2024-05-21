@@ -825,9 +825,9 @@ panel_frame_switcher_set_property (GObject      *object,
           {
             gtk_orientable_set_orientation (GTK_ORIENTABLE (box_layout), orientation);
             if (gtk_orientable_get_orientation (GTK_ORIENTABLE (box_layout)) == GTK_ORIENTATION_VERTICAL) {
-              gtk_widget_set_size_request(GTK_WIDGET (box_layout), -1, 340);
+              gtk_widget_set_size_request(GTK_WIDGET (switcher), -1, 340);
             } else {
-              gtk_widget_set_size_request(GTK_WIDGET (box_layout), 340, -1);
+              gtk_widget_set_size_request(GTK_WIDGET (switcher), 340, -1);
             }
             _panel_dock_update_orientation (GTK_WIDGET (switcher), orientation);
             g_clear_pointer (&switcher->drop_indicator, gsk_render_node_unref);
